@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>lista-empleos</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div *ngFor="let empleo of empleados | async">
+        <h3 style="color: greenyellow">{{empleo.titulo}}</h3>
+        <p style="color: greenyellow">{{empleo.descripcion}}</p>
+        <p style="color: greenyellow">{{empleo.salario}}</p>
+    </div>
+
+    <div *ngFor="let cosa of cosas">
+        <h3 style="color: greenyellow">{{cosa.id}}</h3>
+        <p style="color: greenyellow">{{cosa.nombre}}</p>
+    </div>
+
+
+</ion-content>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1063089824689",
+    "firebase_url": "https://empleos-f25c4.firebaseio.com",
+    "project_id": "empleos-f25c4",
+    "storage_bucket": "empleos-f25c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063089824689:android:c0e39e38979bcd80bf5390",
+        "android_client_info": {
+          "package_name": "ec.edu.ups.pm.empleos2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063089824689-vuchablikl2c4ljgur5n9fmv3as7lb1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCscUtJDk08KYdK2XJ8Tti9JGtPrEYbsc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063089824689-vuchablikl2c4ljgur5n9fmv3as7lb1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
