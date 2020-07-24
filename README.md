@@ -53,7 +53,8 @@ scan(){ <br>
             <ion-button (click)=" conectar(device.id) ">connect</ion-button><br>
         </ion-card-content><br>
     </ion-list><br>
-</ion-content><br>````
+</ion-content><br>
+````
   <br>
   Ahora para poder implemetar nuestro componente accedemos al .modules de la pagina en donde queremos implementarlo, y lo importamos, en este caso es en el crear empleos
   <br>
