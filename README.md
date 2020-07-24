@@ -56,8 +56,13 @@ scan(){ <br>
 </ion-content><br>
 
   Ahora para poder implemetar nuestro componente accedemos al .modules de la pagina en donde queremos implementarlo, y lo importamos, en este caso es en el crear empleos
-  import { BluetoothCComponent } from '../../../components/bluetooth-c/bluetooth-c.component';
-   declarations: [BluetoothCComponent],
-   exports: [BluetoothCComponent]
-   finalmente en .html de este ultimo mencionado ponemos lo siguiente : <app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'"></app-bluetooth-c> 
-  ````
+  
+import { BluetoothCComponent } from '../../../components/bluetooth-c/bluetooth-c.component';
+
+declarations: [BluetoothCComponent],
+  
+exports: [BluetoothCComponent]
+   
+finalmente en .html de este ultimo mencionado ponemos lo siguiente : <app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'"></app-bluetooth-c> 
+ 
+````
