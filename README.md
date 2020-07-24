@@ -64,4 +64,4 @@ scan(){ <br>
    <br>
    exports: [BluetoothCComponent]
    <br>
-   finalmente en .html de este ultimo mencionado ponemos lo siguiente : ````<app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'"></app-bluetooth-c>````
+   finalmente en .html de este ultimo mencionado ponemos lo siguiente : ```<app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'"></app-bluetooth-c>```
