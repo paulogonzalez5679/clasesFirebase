@@ -20,7 +20,7 @@ ionic generate component components/bluetooth
 <br>
 ahora dentro de este componente accedemos al archivo .ts y creamos los metodos para que escanne los dispositivos bluetooth, cabe recalcar que esta orietando a la conectividad serial, por el cual el disipositivo al cual se intente conecta debe enviar una señal, para las pruebas se usaron AirPods los cuales su caja contiene un boton y tiene una señal que emite para conectarse, se puede usar un sensor de arudio H05 bluetooth para hacer esata prueba pero se debe realizar otras configuraciones 
 <br>
-'''scan(){ <br>
+scan(){ <br>
     this.devices = []; <br>
     this.ble.scan([], 15).subscribe(<br>
       device => this.onDeviceDiscovered(device)<br>
@@ -39,7 +39,7 @@ ahora dentro de este componente accedemos al archivo .ts y creamos los metodos p
   }<br>
   dentro del .html de este componente tendremos lo siguiente:
   <br>
-  <ion-button (click)="scan()" slot="end"><br>
+  '''<ion-button (click)="scan()" slot="end"><br>
     <ion-icon [name]="icon"></ion-icon><br>
     <p>Scan</p><br>
 </ion-button>
