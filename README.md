@@ -37,3 +37,38 @@ scan(){ <br>
   conectar(id){<br>
     this.ble.connect(id) ;<br>
   }<br>
+  
+  <br>
+  dentro del .html de este componente tendremos lo siguiente:
+  <br>
+  <ion-button (click)="scan()" slot="end"><br>
+    <ion-icon [name]="icon"></ion-icon><br>
+    <p>Scan</p><br>
+</ion-button><br>
+<br>
+<ion-content><br>
+    <ion-list><br>
+        <ion-card-content ion-item *ngFor="let device of devices"><br>
+            <p>{{device.name}}</p><br>
+            <p>{{device.id}}</p><br>
+            <p> RSSI: {{device.rssi}}</p><br>
+            <ion-button (click)=" conectar(device.id) ">connect</ion-button><br>
+        </ion-card-content><br>
+        <!--<br>
+        <ion-card-content ion-item *ngFor="let device of id"><br>
+            <p>conectado a: {{device.name}}, {{device.id}}</p><br>
+        </ion-card-content>--><br>
+    </ion-list><br>
+</ion-content><br>
+  <br>
+  Ahora para poder implemetar nuestro componente accedemos al .modules de la pagina en donde queremos implementarlo, y lo importamos, en este caso es en el crear empleos
+  <br>
+  import { BluetoothCComponent } from '../../../components/bluetooth-c/bluetooth-c.component';
+  <br>
+   declarations: [BluetoothCComponent],
+   <br>
+   exports: [BluetoothCComponent]
+   <br>
+   finalmente en .html de este ultimo mencionado ponemos lo siguiente 
+   <br>
+   <app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'"></app-bluetooth-c>
