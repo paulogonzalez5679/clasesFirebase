@@ -14,8 +14,11 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
-
+import { BluetoothSerial } from '@ionic-native/bluetooth-serial/ngx';
 import { Camera} from '@ionic-native/camera/ngx';
+
+import { BLE } from '@ionic-native/ble/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -29,6 +32,8 @@ import { Camera} from '@ionic-native/camera/ngx';
     AngularFireStorageModule
   ],
   providers: [
+    BLE,
+    BluetoothSerial,
     StatusBar,
     SplashScreen,
     Camera,

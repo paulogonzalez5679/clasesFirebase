@@ -1,0 +1,19 @@
+<ion-button (click)="scan()" slot="end">
+    <ion-icon [name]="icon"></ion-icon>
+    <p>Scan</p>
+</ion-button>
+
+<ion-content>
+    <ion-list>
+        <ion-card-content ion-item *ngFor="let device of devices">
+            <p>{{device.name}}</p>
+            <p>{{device.id}}</p>
+            <p> RSSI: {{device.rssi}}</p>
+            <ion-button (click)=" conectar(device.id) ">connect</ion-button>
+        </ion-card-content>
+        <!--
+        <ion-card-content ion-item *ngFor="let device of id">
+            <p>conectado a: {{device.name}}, {{device.id}}</p>
+        </ion-card-content>-->
+    </ion-list>
+</ion-content>

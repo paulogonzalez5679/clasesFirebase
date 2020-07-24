@@ -26,9 +26,11 @@
             <ion-input [(ngModel)]="empleo.salario"></ion-input>
         </ion-item>
 
+
         <ion-item>
 
             <app-image-upload [icon]="'camera'" [type]="'camera'" (uploadFinished)="imagenCargada($event)"></app-image-upload>
+
 
             <ion-button type="button" (click)='tomarFoto()'>tomar foto</ion-button>
             <img [src]="base64Image" />
@@ -40,5 +42,6 @@
     <div class="ion-padding">
         <ion-button expand="block" type="submit" class="ion-no-margin" (click)='guardarEmpleo()'>Guardar</ion-button>
     </div>
+    <app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'" (scanner)="scaneado($event)"></app-bluetooth-c>
 
 </ion-content>

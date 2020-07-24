@@ -58,5 +58,12 @@ export class CrearEmpleoPage implements OnInit {
     console.log(JSON.stringify (e));
     this.empleo.image = e;
   }
+  scaneado(e)
+  {
+    console.log('scaneo finalizado y conectado', e );
+    alert('scaneo finalizado y conectado');
+    console.log(JSON.stringify (e));
+  }
+
 
 }

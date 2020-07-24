@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>bluetooh</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-list-header>
+            Dispositivos
+        </ion-list-header>
+        <ion-button (click)=" ActivarBluetooth() ">Listar Dispositivos</ion-button>
+
+        <ion-card-content *ngFor="let data of devices">
+
+            <br>
+            <p style="color: greenyellow">{{data.name}}</p>
+            <br>
+            <p style="color: greenyellow">{{data.address}}</p>
+            <div>
+                <ion-button (click)=" conectar(data.address) ">Conectar</ion-button>
+            </div>
+        </ion-card-content>
+
+    </ion-list>
+
+</ion-content>
+<!--
+  name= nombre del  dispositivo
+  id= id del dispositivo
+  address: direccion mac
+  class: tipo 
+-->

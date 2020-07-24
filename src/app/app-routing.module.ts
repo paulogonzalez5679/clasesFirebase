@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'crear-empleo',
     loadChildren: () => import('./shared/pages/crear-empleo/crear-empleo.module').then( m => m.CrearEmpleoPageModule)
+  },
+  {
+    path: 'blue',
+    loadChildren: () => import('./shared/pages/blue/blue.module').then( m => m.BluePageModule)
+  },
+  {
+    path: 'scanner',
+    loadChildren: () => import('./shared/pages/scanner/scanner.module').then( m => m.ScannerPageModule)
   }
 ];
 

@@ -33,13 +33,13 @@ export class AppComponent implements OnInit {
       icon: 'archive'
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
+      title: 'scannerBluetooth',
+      url: 'scanner',
       icon: 'trash'
     },
     {
-      title: 'Spam',
-      url: '/folder/Spam',
+      title: 'Bluetooth',
+      url: 'blue',
       icon: 'warning'
     }
   ];
