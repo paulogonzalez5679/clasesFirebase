@@ -37,8 +37,6 @@ scan(){ <br>
   conectar(id){<br>
     this.ble.connect(id) ;<br>
   }<br>
-  
-  <br>
   dentro del .html de este componente tendremos lo siguiente:
   <br>
   <ion-button (click)="scan()" slot="end"><br>
@@ -69,6 +67,4 @@ scan(){ <br>
    <br>
    exports: [BluetoothCComponent]
    <br>
-   finalmente en .html de este ultimo mencionado ponemos lo siguiente 
-   <br>
-   <app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'"></app-bluetooth-c>
+   finalmente en .html de este ultimo mencionado ponemos lo siguiente : <app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'"></app-bluetooth-c>
