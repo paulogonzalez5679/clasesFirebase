@@ -61,7 +61,6 @@ scan(){ <br>
   import { BluetoothCComponent } from '../../../components/bluetooth-c/bluetooth-c.component';
   <br>
    declarations: [BluetoothCComponent],
-   <br>
    exports: [BluetoothCComponent]
    <br>
    finalmente en .html de este ultimo mencionado ponemos lo siguiente : 
