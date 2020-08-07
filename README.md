@@ -67,5 +67,4 @@ finalmente en .html de este ultimo mencionado ponemos lo siguiente : <app-blueto
  
 ````
 # NOTA
-Imagenes del funcionamiento se encuentran en la carperta 
-# Imagenes respaldo
+Imagenes del funcionamiento se encuentran en la carperta Imagenes respaldo
