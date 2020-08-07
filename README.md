@@ -66,3 +66,6 @@ exports: [BluetoothCComponent]
 finalmente en .html de este ultimo mencionado ponemos lo siguiente : <app-bluetooth-c [icon]="'Bluetooth'" [type]="'Bluetooth'"></app-bluetooth-c> 
  
 ````
+# NOTA
+Imagenes del funcionamiento se encuentran en la carperta 
+# Imagenes respaldo
